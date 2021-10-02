@@ -20,34 +20,35 @@
     <link rel="stylesheet" href="Ressources/css/all.css">
 </head>
     <body>
-        <header>
-            <div class="header_upper">
-                <div class="logo">
+        <header class="wrapper">
+            <div class="logo">
                     <img src="Images/Logo Assoc_ (PNG).webp" alt="logo CoeurInLove">
-                </div>
-                <div class="header_socials">
-                    <ul>
-                        <li><i class="fab fa-facebook"></i></li>
-                        <li><i class="fab fa-instagram"></i></li>
-                        <li><i class="far fa-envelope"></i></li>
-                    </ul>  
-                </div>
             </div>
+            <div class="socials">
+                <p>Nous contacter</p>
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="far fa-envelope"></i>                    
+            </div>
+            
                 <!-- Barre de navigation Bootstrap -->
-            <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-                <a href="#" class="navbar-brand"></a>
-                <button class="navbar-toggler" type="button"
-                data-bs-toggle="collapse" data-bs-target="#menuhamburger" aria-controls="menuhamburger" 
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="menuhamburger">
-                    <ul class="navbar-nav nav-fill w-100">
-                        <li class="nav-item">
-                        <a href="./index.html" class="nav-link active">Accueil</a>
+           
+            <nav class="navbar navbar-expand-md navbar-dark" role="navigation"> 
+                <div class="container"> 
+                    <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#menuhamburger" aria-controls="menuhamburger" 
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse " id="menuhamburger">
+                    <ul class="navbar-nav nav-pills nav-fill w-100">    
+                        <!-- remplacer nav-fill par nav-justified poour largeur égal des elements -->
+                        <li class="nav-item ">
+                        <a href="./index.html" class="nav-link active ">Accueil</a>
                         </li>
                         <li class="nav-item">
-                        <a href="#" class="nav-link">L'association</a>
+                        <a href="#" class="nav-link ">L'association</a>
                         </li>
                         <li class="nav-item">
                         <a href="#" class="nav-link">Nos activités</a>
@@ -58,35 +59,31 @@
                     </ul>
                 </div>
             </nav>
-           
         </header>
 
         <main class="presentation">
-            <div class="intro">
-                <h1>Bienvenue sur le site de l'association!</h1>
+            <section class="intro">
+                <h1 class="card-title">Bienvenue sur le site de l'association!</h1>
                 <p>Aujourd'hui le climat social et environnemental est au coeur des débats, il est un réel problème et des projets concrets doivent être mis en avant dès maintenant.</p>
                 <p>Au travers de nos activités, nous souhaitons avoir un réel engagement pour apporter et transmettre un message de fraternité et d'espoir auprès des jeunes générations </p>
                 <p>Créée en famille, notre objectif de redonner du sens à nos valeurs, sensibiliser et être actif dans 
-                    l’éducation sociale et environnementale pour tous.</p>
-            </div>
-            <div class="resume">
-                <p>5 membres actifs au quotidien</p>
-                <p>L'Acil c'est avant tout un projet familial né d'une envie de faire bouger les choses sans attendre </p>
-                <p>qui sommes-nous?</p>
-                <p>intervention en milieu scolaire : grâce a notre partenairiat avec les communes locales nous sensibilisons les plus jeunes au travers de kit de prévention ludiques</p>
-                <p>Atelier créatif : faire de l'art en recyclant et en s'amusant</p>
-                <p>Découvrez nos activités</p>
-                <p>Etre acteur c'est aussi participer aux évenements locaux</p>
-                <p>Collecte, evenement associatif, venez nous rejoindre ou découvrir nos participations </p>
-        </div>
+                l’éducation sociale et environnementale pour tous.</p>
+            </section>    
+            <section class= valeur>
+                <h2>Nos Valeurs</h2>
+                <img src="/Images/ouverturemonde.PNG" alt="mains ouvertes sur le monde">
+                <h3>Ouverture sur le monde</h3>
+                <img src="/Images/sensibiliser.PNG" alt="image feuille qui pousse dans le cerveau">
+                <h3>sensibiliser à l'environnement</h3>
+                <img src="/Images/solidarité.PNG" alt="plusieurs main croisés">
+                <h3>Solidarité dans nos actions</h3>
+            </section>      
         </main>
 
         <footer>
-
-        </footer>
-              
-
-
+            Made love with Deza
+        </footer>      
+    
     <!-- Boostrap Bunde with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
     </body>

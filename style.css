@@ -1,67 +1,121 @@
-html, body{
+html, body {
     margin: 0;
-    }
-
+    padding: 0;
+    
+}
 body{
-    width: 100% ;
-    height: auto;
-    background-color:#161a1d;
+    background-color: blueviolet;
     font-family: 'Architects Daughter', cursive;
-    }
-
+    font-size: 100%;
+    width: 100%;
+    height: auto;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:    "header"
+                            "main"
+                            "footer" ;
+}
+h1{
+    1.5em
+}
+.navbar-toggler {
+    background-color: #161A1D;
+}
+.wrapper{
+    width: 100%;
+}
 
 
 header{
+    grid-area: header;
     width: 100% ;
     background-color:#E5383B ;
-    display: flex;
-    flex-direction:column;
-    justify-content: space-between;
-    }
+    display:grid;
+    grid-template-columns: 3fr;
+    grid-template-rows: 3fr;
+    grid-template-areas: "logo"
+    "socials"
+    "navbar";
+    align-items: center;
+    justify-content: center;
+} 
 
+.logo {
+    grid-area: logo;    
+}
 
+.socials {
+    grid-area: socials;
+    color:#161A1D ;
+    font-size: 1.8rem;
+    text-align: center;
+}
 
-main{
+.navbar {
+    grid-area: navbar;
+    background-color:161A1D ;
+}   
+
+main {
+    grid-area: main;
+    background-color:#161A1D ;
+    
+}
+section{
     background-color:#D3D3D3 ;
 }
 
-
-.header_upper{
-
-    display: flex;
-    align-items: center;
-    
-    /* justify-content: space-evenly; */
-}
-.header_socials{
-    /* padding: 20% 0; */
-    /* background-color: cornsilk; */
-    color:#161A1D ;
-    /* display:flex; */
-    /* flex-direction: column; */
-    /* justify-content: space-between; */
-    font-size: 1.8rem;
+footer {
+    grid-area: footer;
+    background-color:#161A1D ;
+    width: 100%;
+    height: auto;
+    padding:0;
+    margin: 0;
 }
 
-/* .header_socials i{
-    margin: 20px;
-} */
+#menuhamburger .active {
+    background-color:#D3D3D3 ;
+    color: #161A1D;
+    font-weight: bold;
+}
 
-p{
+.nav-link {
+font-size: 1.5rem;
+}
+
+
+p, h3{
     font-family: 'Montserrat', sans-serif;
 }
-.header_socials i{
+
+.socials i {
     margin: 0 1.5rem;
 }
 
-.header_socials ul{
-    list-style-type: none;
-    }
 
 img {
-
-    width:  100%;
+    max-width:  100%;
     border-radius: 50%;
-    padding: 10px;
+    padding: 20px;
 }
 
+
+@media screen and (min-width: 768px) {
+    
+     
+    header{
+     display:grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     grid-template-rows: 2fr;
+     grid-template-areas: " logo . socials"
+     "navbar navbar navbar";
+          
+
+     }
+     main{
+        padding: 20px;
+     }
+
+}
