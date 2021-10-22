@@ -5,45 +5,56 @@
 }
 
 body{
-    background-color: blueviolet;
-    font-family: 'Architects Daughter', cursive;  
-}
-
-p, h3, h4{
+    background-color: rgb(246, 245, 248);
     font-family: 'Montserrat', sans-serif;
+    
 }
 
+h1, .nav-item, .btn, #header-citation{
+    font-family: 'Architects Daughter', cursive; 
+    color: #161A1D;
+}
+h2, h3 {
+    color: #1d89be;
+}
+/* p{
+    font-size: 1.5rem;
+} */
 
-
-.container-grille {
+/* .container-grille {
     display: flex;
     flex-direction: column;
     margin-top: -25px;
+} */
+
+/* CSS Carrousel */
+
+.photocarroussel {
+   
+    height: 40vh;
+    width: auto;
+  
 }
-
-
-header, footer {
-    background-color:#E5383B ;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    } 
-header{
+.card-event{
     
 }
+
+/* CSS du header */
+
+header, footer {
+    background-color:#d62839 ;
+    /* justify-content: center;
+    align-items: center;
+    display: flex; */
+    } 
+
 #logo{
     max-width:  60%;
     border-radius: 50%;
-    padding: 10px;
+    padding: 0.5em;
     }
 
 /* Css barre de navigation */
-
-/* .navbar-brand img{
-    max-width: 20%;
-    border-radius: 50%;
-} */
-
 
 .navbar-expand-md{
     flex-wrap: wrap;
@@ -51,77 +62,36 @@ header{
 }
 
 .navbar {
-    background-color:161A1D ;
+    background-color:#161A1D ;
+  
 }   
 
 .navbar-toggler {
-    background-color: #161A1D;
+    background-color:#161A1D;
      }
      
 
 #menuhamburger .active {
-    background-color:#D3D3D3 ;
+    background-color:#f5f3f4;
     color: #161A1D;
     font-weight: bold;
+   
 }
-
-.nav-link {
+.nav-item {
 font-size: 1.5rem;
-
+padding:0.3rem ;
 }
+
 
 /* CSS du main */
 
-main {
-    background-color:#d7fa0f ; 
-    
+  main {
+    background-color:#f5f3f4 ; 
+   
 } 
-h2, h3{
-    text-align: center;
-} 
-h2 {
-    background-color: #B1A7A6;
-    color: #161A1D;
-    padding: 20px;
-    font-size: 1.5 rem;
+.valeurs{
+    background-color:#b1a7a6 ;
 }
-h3{
-    color: #B1A7A6;
-    font-size: 1,2 rem;
-    
-}
-.card_title{
-    font-size: 2 rem;
-    font-weight: bold;
-    margin: 0px;
-    padding-bottom: 20px;
-    }
-
-.card_intro{
-    font-size: 1 rem;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    text-align: center;
-}
-.valeur > div > img {
-    max-width:  70%;
-    border-radius: 50%;
-    padding: 10px;
-}
-.valeur{
-    text-align: center;
-    padding-bottom: 50px;
-}
-
-section{
-    background-color:#F5F3F4 ;
-}
-
-footer{
-    display: flex;
-    flex-direction: column;
-    padding: 20px 0;
-    }
 
 .socials {
     color:#161A1D ;
@@ -130,43 +100,68 @@ footer{
     }
 
 .socials i {
-    margin: 0 1.2rem;
+    font-size: 1.5rem;
+    color:#161A1D#;
+}
+.socials {
+    text-decoration: none;
+    color: #D3D3D3;
+    
+}
+.socials:hover{
+    color: #D3D3D3;
+}
+h4 , #header-citation{
+    color: #D3D3D3;
+}
+/* css page asso */
+
+.membres{
+    background-color:#D3D3D3;
 }
 
 
+/* css du formulaire */
 
+.contact-form{
+    background-color: #161A1D;
+    color: #D3D3D3;
+    margin-top:20px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 3px #161A1D;
+}
+hr{
+    background: #D3D3D3;
+}
+.btn-custom{
+    background-color: #D3D3D3;
+    }
+.btn-dark{
+    background-color: #1d89be;
+    color: #f5f3f4;
+    
+}
 
+/* CSS Evenement */
+.background-evenement, .card-body-event{
+    background-image: url(images/fontevent.jpg);
+    background-size: cover;
+    color: #D3D3D3;
+}
+.presentation-evenement{
+    background-color: rgb(245, 243, 244, 0.30);
 
+}
 
+/* CSS du footer */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    height: 15wh;
+    }
 
 
 @media screen and (min-width: 768px) {
     
-    /* .navbar-brand img{
-        visibility: hidden;
-    } */
-     
-    /* header{
-     display:grid;
-     grid-template-columns: 1fr 1fr 1fr;
-     grid-template-rows: 2fr;
-     grid-template-areas: " logo . socials"
-     "navbar navbar navbar";
-          
-
-     }
-     main{
-        padding: 20px;
-        display :grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-areas:    "card-intro card-intro card-intro"
-                                "valeur valeur valeur"
-                                "valeur_monde valeur_environnement valeur_solidarite" ;
-     }
-
-     .navbar-expand-md{
-         flex-wrap: wrap;
-         justify-content: flex-start;
-     } */
-}

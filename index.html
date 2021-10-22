@@ -15,21 +15,36 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Montserrat&display=swap" rel="stylesheet">
     <!-- Lien vers mon css -->
-    <link rel="stylesheet" href="stylebis.css">
+    <link rel="stylesheet" href="style.css">
     <!-- Icon font Awesome -->
     <link rel="stylesheet" href="Ressources/css/all.css">
 </head>
     <body>
-        <div class="container-grille">
-            <header class="wrapper">
+        <header class="container-fluid">
+            <div class="row header-top align-items-center justify-content-space-between">
+                
+                <div class="  col-2 d-none d-lg-block col-lg-4 ">
+                    <h2 class=" text-center text-shadow" id="header-citation">"Après le verbe aimer, aider est le plus beau verbe du monde..."</h2>
+                </div>
+                
+                <div class="col-8 offset-2 logo col-lg-4 offset-lg-0 text-center p-0">
+                    <img src="Images/Logo Assoc_ (PNG).webp" alt="logo CoeurInLove" id="logo" class="">
+                </div>
                
-                        <img src="Images/Logo Assoc_ (PNG).webp" alt="logo CoeurInLove" id="logo">
-                
-                
-            </header>   
+                <div class="col-2 col-lg-4 ">
+                                              
+                        <div class="flex-column flex-md-row text-start text-center">
+                            <a class="socials fab fa-facebook col text-lg-end  py-3 p-lg-4" href="https://www.facebook.com/Coeurinlove"></a>
+                            <a class= "socials fab fa-instagram col text-lg-center  py-3 p-lg-4" href="https://www.instagram.com/artscoeurinlove"></a>
+                            <a class="socials far fa-envelope col text-lg-start  py-3 p-lg-4" href="mailto:contact@coeurinlove.fr"></a> 
+                        </div>
+                     </div>
+                </div>
+            </div>
+        </header>   
                     <!-- Barre de navigation Bootstrap -->
             
-                    <nav class="navbar navbar-expand-md navbar-dark" role="navigation"> 
+                    <nav class="navbar navbar-expand-md navbar-dark sticky-top" id="sticky-nav" role="navigation"> 
                         <div class="container-fluid"> 
                             <button class="navbar-toggler" type="button"
                             data-bs-toggle="collapse" data-bs-target="#menuhamburger" aria-controls="menuhamburger" 
@@ -44,58 +59,135 @@
                                 <a href="./index.html" class="nav-link active ">Accueil</a>
                                 </li>
                                 <li class="nav-item">
-                                <a href="#" class="nav-link ">L'association</a>
+                                <a href="./association.html" class="nav-link ">L'association</a>
                                 </li>
                                 <li class="nav-item">
-                                <a href="#" class="nav-link">Nos activités</a>
+                                <a href="./activites.html" class="nav-link">Nos activités</a>
                                 </li>
                                 <li class="nav-item">
-                                <a href="#" class="nav-link">Evenements</a>
+                                    <a href="./evenements.html" class="nav-link">Evenements</a>
                                 </li>
                             </ul>
                         </div>
                     </nav>
-            
-
-            <main class="presentation">
-                <section class="card_intro">
-                    <h1 class="card_title">Bienvenue sur le site de l'association !</h1>
+            <main class="container-fluid md index pt-3 text-center">
+        
+                <div class="intro">  
+                    <h1 class="my-2">Bienvenue sur le site de l'association !</h1>
                     <p>Aujourd'hui le climat social et environnemental est au coeur des débats, il est un réel problème et des projets concrets doivent être mis en avant dès maintenant.</p>
                     <p>Au travers de nos activités, nous souhaitons avoir un réel engagement pour apporter et transmettre un message de fraternité et d'espoir auprès des jeunes générations </p>
                     <p>Créée en famille, notre objectif de redonner du sens à nos valeurs, sensibiliser et être actif dans 
                     l’éducation sociale et environnementale pour tous.</p>
-                </section>    
-                <section class= "valeur">
-                    <h2>Nos Valeurs</h2>
-                    <div class= "valeur_ouverture">
-                    <img src="/Images/ouverturemonde.PNG" alt="mains ouvertes sur le monde">
-                    <h3>S'ouvrir sur le monde</h3>
+                    
+                </div>    
+                
+                <div class="row valeurs  pb-5"> 
+                    <h2 class="m-3">NOS VALEURS</h2>
+                    <div class="col-lg-2 col-md-4 col-12 text-center">
+                        <div class ="valeur m-2 h-100">
+                            <img class="img-valeur img-fluid w-50 m-3" src="/Images/planete-terre (1).png" alt="mains ouvertes sur le monde">
+                            <h4 class="m-2">S'ouvrir sur le monde</h4>
+                        </div>
                     </div>  
-                    <div class= "valeur_environnement">
-                        <img src="/Images/sensibiliser.PNG" alt="image feuille qui pousse dans le cerveau">
-                        <h3>Sensibiliser à l'environnement</h3>
-                    </div>   
-                    <div class= "valeur_solidarite">
-                        <img src="/Images/solidarité.PNG" alt="plusieurs main croisés">
-                        <h3>Etre solidaire dans nos actions</h3>
-                    </div> 
-                    <div class= "valeur_art">
-                        <img src="/Images/Art.PNG" alt="logo art">
-                        <h3>Mobiliser l'art pour porter nos actions</h3>
-                    </div> 
-                </section>
+                    <div class="col-lg-2 col-md-4 col-12 text-center ">
+                        <div class ="valeur m-2 h-100">
+                            <img class="img-valeur img-fluid w-50 m-3" src="/Images/pensez-a-lenvironnement (1).png" alt="image feuille qui pousse dans le cerveau">
+                            <h4 class="m-2">Sensibiliser à l'environnement</h4>
+                        </div>
+                    </div>  
+                    <div class="col-lg-2 col-md-4 col-12 text-center ">
+                        <div class ="valeur m-2 h-100">
+                            <img class="img-valeur img-fluid w-50 m-3" src="/Images/solidarite (1).png" alt="plusieurs main croisés">
+                            <h4 class="m-2">Etre solidaire dans nos actions</h4>
+                        </div>
+                    </div>  
+                    <div class="col-lg-2 col-md-4 col-12 text-center">
+                        <div class ="valeur m-2 h-100">
+                            <img class="img-valeur img-fluid w-50 m-3" src="/Images/arts (2).png" alt="logo art">
+                            <h4 class="m-2">Mobiliser l'art pour porter nos valeurs</h4>
+                        </div>
+                    </div>  
+                    <div class="col-lg-2 col-md-4 col-12 text-center ">
+                        <div class ="valeur m-2 h-100">
+                            <img class="img-valeur img-fluid w-50 m-3" src="/Images/initiative.png" alt="ampoule allumée">
+                            <h4 class="m-2">Encourager les initiatives</h4>
+                        </div>
+                    </div>  
+                    <div class="col-lg-2 col-md-4 col-12 text-center ">
+                        <div class ="valeur m-2 h-100">
+                            <img class="img-valeur img-fluid w-50 m-3" src="/Images/recycler.png" alt="logo art">
+                            <h4 class="m-2">Réutiliser nos ressources</h4>
+                        </div>
+                    </div>  
+                </div>
+
+                <div class= "row center presentation">
+                    <div  class="col-lg-3 col-12 my-lg-3">
+                        <img src="Images/hands.webp" class=" img-thumbnail img-fluid p-lg-2 h-100" alt="Main croisées">
+                    </div>
+                    <div class="col-lg-3 col-12 p-lg-5 text-center text-lg-start">
+                        <h2>L'ASSOCIATION</h2>
+                        <p>Une équipe qui a a coeur de porter son méssage et ses valeurs découvrer notre team.Créée en famille, notre objectif de redonner du sens à nos valeurs, sensibiliser et être actif dans 
+                        l’éducation sociale et environnementale pour tous.</p>
+                        <a href="./association.html" class="btn btn-dark" role="button">En savoir +</a>    
+                    </div>
+                    <div  class="col-lg-3 col-12 my-lg-3">
+                        <img src="Images/recycle-57136_960_720.jpg" class=" img-thumbnail img-fluid p-lg-2 h-100" alt="logo recyclage">
+                    </div>
+                    <div class="col-lg-3 col-12  p-lg-5 text text-center text-lg-start">
+                        <h2>NOS ACTIVITES</h2>
+                        <p>Au travers de nos activités, nous souhaitons avoir un réel engagement pour apporter et 
+                        transmettre un message de fraternité et d'espoir auprès des jeunes générations </p>
+                        <a href="./activites.html" class="btn btn-dark" role="button">En savoir +</a>
+                    </div>
+
+                    <div class="col-12 background-evenement py-5">
+                        <div class="container presentation-evenement py-5">
+                            <h2>NOS EVENEMENTS</h2>
+                            <div id="carouselEvenement" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active" data-bs-interval="6000">
+                                        <img src="./Images/thedish.jpg" class="photocarroussel center-block " alt="...">
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="6000">
+                                        <img src="./Images/videtachambre.jpg" class="photocarroussel center-block " alt="...">
+                                    </div>
+                                    <div class="carousel-item"data-bs-interval="6000">
+                                        <img src="./Images/noplastic.png" class="photocarroussel center-block " alt="...">
+                                    </div>
+                                    <div class="carousel-item"data-bs-interval="6000">
+                                        <img src="./Images/boite de noel.jpg" class="photocarroussel center-block " alt="...">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselEvenement" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselEvenement" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                              </div>
+                            <br>
+                            <h2>A vos agendas!</h2> 
+                            <p>Que se soient pour s'associer aux activités associatives locales, aux évenements artistiques portés par nos partenaires ou bien pour se recontrer tout simplement... 
+                            Retrouver les prochaines dates a ne pas manquer ou nous retrouver</p>
+                            <a href="./evenements.html" class="btn btn-dark" role="button">En savoir +</a>
+                        </div>
+                    </div>
+                </div> 
             </main>
 
             <footer>
                 <h4>Nous suivre</h4>
                 <div class="socials">  
-                    <i class="fab fa-facebook"></i>
-                    <i class="fab fa-instagram"></i>
-                    <i class="far fa-envelope"></i>                    
+                    <a href="https://www.facebook.com/Coeurinlove"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/artscoeurinlove"><i class="fab fa-instagram"></i></a>
+                    <a href="./association.html#contact-form"><i class="far fa-envelope"></i></a>                  
                 </div>
                 <p class="Copyright">@2021 Made ♥ by Deza</p>
             </footer>      
-        </div>
+        
     <!-- Boostrap Bunde with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
     </body>
