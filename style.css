@@ -17,6 +17,8 @@ h1, .nav-item, .btn, #header-citation{
 h2, h3 {
     color: #1d89be;
 }
+
+
 /* p{
     font-size: 1.5rem;
 } */
@@ -34,9 +36,6 @@ h2, h3 {
     height: 40vh;
     width: auto;
   
-}
-.card-event{
-    
 }
 
 /* CSS du header */
@@ -152,6 +151,9 @@ hr{
     background-color: rgb(245, 243, 244, 0.30);
 
 }
+.text-end{
+    color: #d62839;
+}
 
 /* CSS du footer */
 
@@ -164,4 +166,10 @@ footer{
 
 
 @media screen and (min-width: 768px) {
-    
+    .card-body-event{
+        width: 75%;
+    }
+    .photos-event{
+        width: 25%;
+    }
+}

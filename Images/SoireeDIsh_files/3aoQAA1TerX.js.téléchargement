@@ -1,4 +1,0 @@
-if (self.CavalryLogger) { CavalryLogger.start_js(["vjfDezT"]); }
-
-__d("BoostedComponentFalcoEvent",["FalcoLoggerInternal","getFalcoLogPolicy_DO_NOT_USE"],(function(a,b,c,d,e,f){"use strict";a=b("getFalcoLogPolicy_DO_NOT_USE")("2054602");c=b("FalcoLoggerInternal").create("boosted_component",a);e.exports=c}),null);
-__d("MAdsLWIXHPLoggingUtil",["BoostedComponentFalcoEvent","Event"],(function(a,b,c,d,e,f,g){"use strict";function a(a,b,d){c("Event").listen(a,"click",function(){c("BoostedComponentFalcoEvent").logCritical(function(){return{action:"enter",context:"flow",page_id:b,post_id:String(d),event:"enter_flow_click",product:"boosted_post",entry_point:"msite_post_footer",flow:"create",side:"user_action"}})})}g.attachOnClickBoostedPostButtonEventListener=a}),98);
